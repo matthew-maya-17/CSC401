@@ -4,6 +4,7 @@
   <style type="text/css">
   * {
     box-sizing: border-box;
+    
   }
   body {
      font-family: "Trebuchet MS", Skia, "Lucida Sans Unicode", sans-serif;
@@ -11,12 +12,23 @@
      margin: 2.5em auto 5em 5% ;
      width: 100%;
   }
+  #header {
+    margin: 3em 0 ;
+    border: 3px rgb(0, 168, 0);
+    border-style: solid solid ;
+    padding: 0em  2em 0 ;
+    text-align: center ;
+    }
+
+    #header .title {
+        font-size: 1.6em ;
+        margin-bottom: 0 ;
+    }
   div#container {
     width: 100%;
     display: block;
     float: left;
     color: rgb(0, 168, 0);
-    fill: #0ca6ed
   }
   div.slot input.open {
     background-color: rgb(0, 168, 0);
@@ -93,7 +105,9 @@
   </style>
 </head>
 <body>
-  <h1>Double Hashing</h1>
+    <div id="header">
+    <h1>Double Hashing</h1>
+    </div>
   <p class="function">
     First hash function: key mod 16
     <br>
